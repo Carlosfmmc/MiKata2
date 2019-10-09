@@ -7,7 +7,14 @@ public class MiKata2 {//Ctrl + r para cambiarle el nombre
         HistogramDisplay histogramDisplay = new HistogramConsoleDisplay();
         histogramDisplay.show(histogram);
         histogram.add(9);
+        histogram.add(9);
+        histogram.add(9);
+        histogram.add(9);
+        histogram.add(9);//Ctrl + shift + fecha para ir copiando linea
+        histogram.add(9);
         histogram.remove(8);
+        histogram.remove(1);
+        histogramDisplay.show(histogram);//Shift + alt + flecha para mover la linea
     }
     
 }
