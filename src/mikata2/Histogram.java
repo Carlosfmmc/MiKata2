@@ -27,6 +27,15 @@ public class Histogram implements Iterable<Integer>{
     public void add(int i) {
         hist.put(i, hist.getOrDefault(i, 0)+1);
     }
+
+    void remove(int i) {
+        hist.put(i, hist.getOrDefault(i, 0)-1);
+    }
+
+    public void clear() {
+        hist.clear();
+    }
+    
     
     
 }
