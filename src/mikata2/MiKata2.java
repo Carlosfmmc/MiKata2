@@ -8,7 +8,7 @@ public class MiKata2 {//Ctrl + r para cambiarle el nombre
         histogramDisplay.show(histogram);
         histogram.add(9);
         histogram.add(9);
-        histogram.add(9);
+        histogram.add(-4);
         histogram.add(9);
         histogram.add(9);//Ctrl + shift + fecha para ir copiando linea
         histogram.add(9);
