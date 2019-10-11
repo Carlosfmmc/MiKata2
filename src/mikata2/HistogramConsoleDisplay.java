@@ -1,4 +1,5 @@
 package mikata2;
+@Deprecated
 class HistogramConsoleDisplay implements HistogramDisplay {
 
     public HistogramConsoleDisplay() {

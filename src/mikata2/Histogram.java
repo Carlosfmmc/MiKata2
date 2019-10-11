@@ -3,7 +3,7 @@ package mikata2;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeMap;
-
+@Deprecated
 public class Histogram<T> implements Iterable<T>{
     
     Map<T, Integer> hist = new TreeMap();
