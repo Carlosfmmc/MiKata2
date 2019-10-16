@@ -1,7 +1,5 @@
 package mikata2;
 
-import java.util.Map;
-
 class NHistogramConsoleDisplay implements NHistogramDisplay {
 
     public NHistogramConsoleDisplay() {
