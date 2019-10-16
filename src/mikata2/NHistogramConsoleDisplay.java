@@ -3,7 +3,7 @@ package mikata2;
 class NHistogramConsoleDisplay implements NHistogramDisplay {
 
     public NHistogramConsoleDisplay() {
-        System.out.println("Histogram");
+        System.out.println("Console Histogram");
     }
 
     @Override
