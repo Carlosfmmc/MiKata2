@@ -3,8 +3,10 @@ package mikata2;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
 
-public class NHistogram implements Iterable<DataObjet>{
+public class NHistogram implements Iterable<Map.Entry<DataObjet, Integer>>{
     
     Map<DataObjet, Integer> histogram = new TreeMap();
     
@@ -13,10 +15,15 @@ public class NHistogram implements Iterable<DataObjet>{
             histogram.put(value, histogram.getOrDefault(value, 0)+1);
         }
     }
-
-    @Override
-    public Iterator<DataObjet> iterator() {
-        return histogram.keySet().iterator();
+    
+    public Stream<Map.Entry<DataObjet, Integer>> stream(){
+        return histogram.entrySet().stream();
+    }
+    public Iterator<Map.Entry<DataObjet, Integer>> iterator() {
+        return histogram.entrySet().iterator();
+    }
+    public Iterator<DataObjet> iterator(Predicate p) {
+        return histogram.entrySet().stream().filter(p).iterator();
     }
     public int getTimes(DataObjet h1) {
         return histogram.get(h1);
