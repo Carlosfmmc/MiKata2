@@ -5,6 +5,7 @@ import mikata2.NHistogram;
 import mikata2.NHistogramDisplay;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.DefaultCategoryDataset;
 import org.jfree.ui.ApplicationFrame;
 
@@ -28,8 +29,8 @@ public class JHistogramDisplay extends ApplicationFrame implements NHistogramDis
 
     private Container createPanel() {
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-        Container chart = ChartFactory.createBarChart(histogramtitle, titleX, titleY, dataset, PlotOrientation.VERTICAL, false, false, false);
-        DefaultCategoryDataset dataset = new DefaultCategoryDataset();
+        //Meter en el dataset la mierda esta
+        JFreeChart chart = ChartFactory.createBarChart(histogramtitle, titleX, titleY, dataset, PlotOrientation.VERTICAL, false, false, false);
         returm chart;
     }
 
